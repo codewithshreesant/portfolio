@@ -1,16 +1,15 @@
 .contact-container {
-    width:100vw;
-    height: 100vh;
+    width: 95.5vw;
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Make it take up the full viewport height */
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+    background-color: #000;
+    color: #fff;
     padding: 20px;
     text-align: center;
-  }
+}
   
   .contact-header {
     margin-bottom: 40px;
@@ -56,37 +55,31 @@
   
   .contact-details {
     display: flex;
-    gap: 60px; /* Space between the sections */
-    align-items: flex-start;
-  }
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center the sections */
+    gap: 20px; /* Reduced gap */
+}
   
-  .send-message,
-  .email-info,
-  .phone-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .send-message p {
+.send-message p {
     font-size: 1.2em;
     margin: 5px 0;
-  }
-  
-  .email-info .label,
-  .phone-info .label {
+}
+
+.email-info .label,
+.phone-info .label {
     font-size: 0.9em;
     color: #aaa;
     margin-bottom: 5px;
-  }
-  
-  .email-info a,
-  .phone-info p {
+}
+
+.email-info a,
+.phone-info p {
     font-size: 1.1em;
     color: #fff;
-    text-decoration: none; /* Remove underline from email link */
-  }
-  
-  .email-info a:hover {
-    text-decoration: underline; /* Add underline on hover if desired */
-  }
+    text-decoration: none;
+}
+
+.email-info a:hover {
+    text-decoration: underline;
+}
+

@@ -1,20 +1,32 @@
 import React from 'react';
-import './AboutComp.css'; // Create this CSS file
- // Replace with your actual image path
+
 
 function AboutComp() {
   return (
-    <div className="about-page-container">
-      <div className="about-image-section">
-        <img src="images/image4.jpg" alt="Shikha Shrestha" className="about-page-image" />
-      </div>
-      <div className="about-text-section">
-        <div className="about-header">
-          <h1>About Me</h1>
-          
+    <div className="bg-black text-white py-20 px-6 flex justify-end items-center h-screen">
+      <div className="w-full lg:w-1/2 flex flex-col items-start">
+        <div className="mb-10">
+          <h1 className="text-6xl font-bold mb-2">About</h1>
+          <h2 className="text-5xl font-normal">Myself</h2>
         </div>
-        <p>I have been modelling since more than 3 years. Currently I'm doing Bachelor's in Computer Application. I am very hardworking and always ready to learn.</p>
-        <p>I have that confident. I have won Envogue8 by House Of Fashion Nepal. Also right now I make content and also working as freelancer content creator.</p>
+        <div className="relative">
+          <div className="absolute bottom-0 left-0 text-gray-600 text-xl">01.</div>
+        </div>
+      </div>
+      <div className="w-full lg:w-1/2 grid grid-cols-2 gap-4">
+        <div className="rounded-full overflow-hidden shadow-lg">
+          <img src="images/image1.jpg" alt="Image 1" className="w-full h-full object-cover" />
+        </div>
+        <div className="rounded-full overflow-hidden shadow-lg">
+          <img src="images/image2.jpg" alt="Image 2" className="w-full h-full object-cover" />
+        </div>
+        <div className="rounded-full overflow-hidden shadow-lg">
+          <img src="images/image3.jpg" alt="Image 3" className="w-full h-full object-cover" />
+        </div>
+        <div className="rounded-full overflow-hidden shadow-lg relative">
+          <img src="images/image4.jpg" alt="Image 4" className="w-full h-full object-cover" />
+          <div className="absolute bottom-4 right-[-40px] rotate-90 text-sm text-gray-400">EMAIL ME</div>
+        </div>
       </div>
     </div>
   );
