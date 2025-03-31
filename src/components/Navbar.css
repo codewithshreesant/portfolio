@@ -87,3 +87,72 @@
   
     /* You might want to add a hamburger menu icon here and the JavaScript to toggle the 'open' class */
   }
+
+  /* Navbar.css */
+/* ... your existing CSS ... */
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none; /* Hide by default on larger screens */
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 10px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  /* Styles for when the menu is open (mobile) */
+  .navbar.open .navbar-menu {
+    display: flex; /* Show the menu */
+  }
+  
+  .navbar.open .hamburger .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .navbar.open .hamburger .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navbar.open .hamburger .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  /* Show hamburger menu on smaller screens */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .navbar-menu {
+      position: absolute;
+      top: 60px; /* Adjust based on navbar height */
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.9); /* Dark background for mobile menu */
+      width: 100%;
+      flex-direction: column;
+      align-items: center; /* Center menu items on mobile */
+      padding: 20px;
+      display: none; /* Initially hide the menu */
+    }
+  
+    .navbar-item {
+      margin: 15px 0;
+      margin-left: 0;
+      width: 100%; /* Make items take full width */
+      text-align: center; /* Center text in menu items */
+    }
+  
+    .navbar-link {
+      font-size: 1.2em;
+      display: block; /* Make links block elements for easier clicking */
+      padding: 10px 0; /* Add some padding to links */
+    }
+  }
