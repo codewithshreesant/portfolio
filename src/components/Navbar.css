@@ -1,0 +1,89 @@
+/* Navbar.css */
+.navbar {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Add vertical padding */
+    position: sticky; /* Make it stick to the top */
+    top: 0;
+    z-index: 100; /* Ensure it's above other content */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between; /* Space out logo and menu */
+    align-items: center;
+    padding: 0 40px; /* Add horizontal padding */
+    max-width: 1200px; /* Optional: Limit maximum width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .navbar-logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .logo-model {
+    font-size: 0.6em;
+    font-weight: normal;
+    display: block;
+    letter-spacing: 0.5px;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin-left: 30px;
+  }
+  
+  .navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .navbar-link:hover {
+    color: #aaa; /* Slightly lighter color on hover */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .navbar-container {
+      padding: 0 20px;
+    }
+  
+    .navbar-menu {
+      position: absolute;
+      top: 60px; /* Adjust based on navbar height */
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.9); /* Dark background for mobile menu */
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      display: none; /* Initially hide the menu */
+    }
+  
+    .navbar.open .navbar-menu {
+      display: flex; /* Show menu when 'open' class is added (you'd need JavaScript for toggling) */
+    }
+  
+    .navbar-item {
+      margin: 15px 0;
+      margin-left: 0;
+    }
+  
+    .navbar-link {
+      font-size: 1.2em;
+    }
+  
+    /* You might want to add a hamburger menu icon here and the JavaScript to toggle the 'open' class */
+  }

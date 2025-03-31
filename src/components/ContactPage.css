@@ -1,0 +1,92 @@
+.contact-container {
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Make it take up the full viewport height */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-header {
+    margin-bottom: 40px;
+  }
+  
+  .contact-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: bold; /* Make "Get in touch" bold */
+    font-family: 'Arial', sans-serif; /* Example font, adjust as needed */
+    letter-spacing: 1px;
+  }
+  
+  .contact-header h2 {
+    font-size: 2em;
+    font-weight: normal; /* Make "with me" regular weight */
+    font-family: 'Arial', sans-serif; /* Example font, adjust as needed */
+    /* Add an oval shape */
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  .contact-header h2:before,
+  .contact-header h2:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 60px; /* Adjust width of the oval */
+    height: 30px; /* Adjust height of the oval */
+    border: 1px solid #fff; /* White border for the oval */
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .contact-header h2:before {
+    left: -70px; /* Adjust position of the left part of the oval */
+  }
+  
+  .contact-header h2:after {
+    right: -70px; /* Adjust position of the right part of the oval */
+  }
+  
+  .contact-details {
+    display: flex;
+    gap: 60px; /* Space between the sections */
+    align-items: flex-start;
+  }
+  
+  .send-message,
+  .email-info,
+  .phone-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .send-message p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+  .email-info .label,
+  .phone-info .label {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-bottom: 5px;
+  }
+  
+  .email-info a,
+  .phone-info p {
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none; /* Remove underline from email link */
+  }
+  
+  .email-info a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+  }

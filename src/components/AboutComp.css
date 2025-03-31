@@ -1,0 +1,129 @@
+/* AboutPage.css */
+.about-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: calc(100vh - Adjust for Navbar height if fixed 60px); */
+    padding: 40px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+  }
+  
+  .about-image-section {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-page-image {
+    max-width: 80%;
+    height: auto;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+  }
+  
+  .about-text-section {
+    width: 45%;
+    padding-left: 40px;
+  }
+  
+  .about-header {
+   
+  }
+  
+  .about-header h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Arial', sans-serif; /* Example font */
+  }
+  
+  .about-header h2 {
+    font-size: 4em;
+    font-weight: normal;
+    font-family: 'Arial', sans-serif; /* Example font */
+  }
+  
+  .about-text-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .about-page-container {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .about-image-section,
+    .about-text-section {
+      width: 90%;
+      margin-bottom: 30px;
+      padding-left: 0;
+    }
+  
+    .about-page-image {
+      max-width: 100%;
+    }
+  
+    .about-header {
+      margin-bottom: 20px;
+    }
+  
+    .about-header h1,
+    .about-header h2 {
+      font-size: 3em;
+    }
+  
+    .about-text-section p {
+      font-size: 1em;
+    }
+  }
+
+
+
+/* Adjust for laptop screens (e.g., between 769px and 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .about-image-section {
+      width: 40%; /* Slightly reduce image width */
+    }
+  
+    .about-text-section {
+      width: 55%; /* Increase text width */
+      padding-left: 30px; /* Adjust padding */
+    }
+  
+    .about-header h1,
+    .about-header h2 {
+      font-size: 3.5em; /* Adjust heading size */
+    }
+  
+    .about-text-section p {
+      font-size: 1.05em; /* Adjust paragraph size */
+    }
+  }
+  
+  /* Larger desktop screens */
+  @media (min-width: 1201px) {
+    .about-image-section {
+      width: 35%; /* Further reduce image width on very large screens */
+    }
+  
+    .about-text-section {
+      width: 60%; /* Increase text width */
+      padding-left: 50px; /* Adjust padding */
+    }
+  
+    .about-header h1,
+    .about-header h2 {
+      font-size: 4.5em; /* Slightly increase heading size on large screens */
+    }
+  
+    .about-text-section p {
+      font-size: 1.15em; /* Adjust paragraph size */
+    }
+  }
+  
+  /* ... existing mobile query ... */

@@ -1,0 +1,88 @@
+.about-container {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    background-color: #000; /* Adjust background color as needed */
+    color: white;
+  }
+  
+  .about-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+  }
+  
+  .about-header h1 {
+    font-size: 4rem;
+    margin-bottom: 5px;
+    
+  }
+  
+  .about-header h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .number-indicator {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    color: #333; /* Adjust color as needed */
+    border: 2px solid #333; /* Adjust border style and color */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 150px); /* Adjust column number and width */
+    grid-gap: 20px;
+    /* margin-bottom: 30px; */
+  }
+  
+  .image-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white; /* Optional: Add a white border */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+  }
+  
+  .image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .email-me {
+    font-size: 1.2em;
+    color: #555; /* Adjust color as needed */
+    border: 1px solid #555; /* Adjust border style and color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .email-me:hover {
+    background-color: #ddd; /* Adjust hover background color */
+  }
