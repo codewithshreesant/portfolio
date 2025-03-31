@@ -6,8 +6,8 @@ function AboutComp() {
     <div className="bg-black text-white py-20 px-6 md:flex md:justify-end flex:col md:flex-row items-center h-screen">
       <div className="w-full lg:w-1/2 flex flex-col items-start">
         <div className="mb-10">
-          <h1 className="text-6xl font-bold mb-2">About</h1>
-          <h2 className="text-5xl font-normal">Myself</h2>
+          <h1 className="text-6xl font-bold mb-2 text-center">About</h1>
+          <h2 className="text-5xl font-normal text-center">Myself</h2>
         </div>
         <div className="relative">
           <div className="absolute bottom-0 left-0 text-gray-600 text-xl">01.</div>
