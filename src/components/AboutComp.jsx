@@ -3,7 +3,7 @@ import React from 'react';
 
 function AboutComp() {
   return (
-    <div className="bg-black text-white py-20 px-6 flex justify-end items-center h-screen">
+    <div className="bg-black text-white py-20 px-6 md:flex md:justify-end flex:col md:flex-row items-center h-screen">
       <div className="w-full lg:w-1/2 flex flex-col items-start">
         <div className="mb-10">
           <h1 className="text-6xl font-bold mb-2">About</h1>

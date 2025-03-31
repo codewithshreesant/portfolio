@@ -5,8 +5,8 @@ function MeasurementComp() {
     <div className="bg-black text-white py-20 px-6 flex justify-center items-center min-h-screen">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         {/* Text and Measurement Section */}
-        <div className="text-left">
-          <h2 className="text-4xl font-bold mb-8">My <span className="font-normal">Measurements</span></h2>
+        <div className="text-left h-[80vh] flex flex-col justify-center">
+          <h2 className="text-4xl font-bold mb-8 text-center">My <span className="font-normal">Measurements</span></h2>
           <div className="bg-gray-700 bg-opacity-70 rounded-lg p-8">
             <p className="text-lg mb-2">Height: <span className="font-semibold">13.97cm</span></p>
             <p className="text-lg mb-2">Bust: <span className="font-semibold">33</span></p>
